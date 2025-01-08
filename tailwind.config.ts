@@ -14,8 +14,13 @@ export default {
       },
       backgroundImage: {
         coreBackground: "url(/photo-1604339454409-701c5278c546.webp)"
+      },
+      textStroke: {
+        white: '2px white'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@designbycode/tailwindcss-text-stroke')
+  ],
 } satisfies Config;
