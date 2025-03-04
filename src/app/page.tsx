@@ -7,27 +7,6 @@ export default function Home() {
       <div className="container mx-auto">
         <HeroSection />
       </div>
-      {/* <div className="relative w-full">
-        <Marquee className="w-fit text-white text-7xl font-bold whitespace-nowrap pt-4 absolute bottom-0">
-          {Array(5)
-            .fill("Handito Natael")
-            .map((item, index) => {
-              return (
-                <div key={index} className="flex flex-col gap-7">
-                  <span className="px-4 text-stroke text-stroke-white text-transparent font-mono">
-                    {item}
-                  </span>
-                  <span className="px-4 text-stroke text-stroke-white text-transparent font-mono">
-                    {item}
-                  </span>
-                  <span className="px-4 text-stroke text-stroke-white text-transparent font-mono">
-                    {item}
-                  </span>
-                </div>
-              );
-            })}
-        </Marquee>
-      </div> */}
     </div>
   );
 }
