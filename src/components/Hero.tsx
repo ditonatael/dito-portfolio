@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
+import { Button } from "./ui/button";
 
 export default function Hero() {
   const techStack = [
@@ -75,10 +76,10 @@ export default function Hero() {
   return (
     <div className="h-screen flex items-center">
       <div className="w-1/2 flex flex-col gap-2.5">
-        <span className="text-5xl font-bold text-primary-black">
+        <span className="text-5xl font-bold text-base-black">
           Hello 👋, I'm Handito Natael
         </span>
-        <span className="text-4xl text-primary-blue font-bold flex gap-2">
+        <span className="text-4xl text-base-blue font-bold flex gap-2">
           <p>I'm a</p>
           <Typewriter
             options={{
@@ -105,13 +106,19 @@ export default function Hero() {
             }
             target="_blank"
           >
-            <button className="w-28 h-10 border-2 border-primary-black rounded-full hover:bg-primary-black hover:text-white font-medium text-sm">
+            <Button
+              variant={"outline"}
+              className="w-28 h-10 border-2 bg-base border-base-black rounded-full hover:bg-base-black hover:text-white font-medium text-sm hover:cursor-pointer"
+            >
               Contact Me
-            </button>
+            </Button>
           </Link>
-          <button className="w-28 h-10 border-2 border-primary-black rounded-full hover:bg-primary-black hover:text-white font-medium text-sm">
+          <Button
+            variant={"outline"}
+            className="w-28 h-10 border-2 bg-base border-base-black rounded-full hover:bg-base-black hover:text-white font-medium text-sm hover:cursor-pointer"
+          >
             My Portfolio
-          </button>
+          </Button>
         </span>
         <div className="pt-2.5">
           <Marquee>
