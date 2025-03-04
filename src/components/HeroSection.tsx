@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
 
@@ -98,9 +99,16 @@ export default function HeroSection() {
           efficient and scalable applications.
         </span>
         <span className="flex gap-2.5">
-          <button className="w-28 h-10 border-2 border-primary-black rounded-full hover:bg-primary-black hover:text-white font-medium text-sm">
-            Contact Me
-          </button>
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=6289668247663&text&type=phone_number&app_absent=0"
+            }
+            target="_blank"
+          >
+            <button className="w-28 h-10 border-2 border-primary-black rounded-full hover:bg-primary-black hover:text-white font-medium text-sm">
+              Contact Me
+            </button>
+          </Link>
           <button className="w-28 h-10 border-2 border-primary-black rounded-full hover:bg-primary-black hover:text-white font-medium text-sm">
             My Portfolio
           </button>
