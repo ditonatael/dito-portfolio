@@ -4,7 +4,7 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
 
-export default function HeroSection() {
+export default function Hero() {
   const techStack = [
     {
       title: "Javascript",
