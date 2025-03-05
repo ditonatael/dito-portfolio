@@ -5,71 +5,102 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 
 export default function Projects() {
   const projects = [
     {
       title: "Roomer - Property Renting App",
       images: ["/roomer.webp", "/roomer-profile.webp"],
+      description:
+        "In the Roomer project, I developed a property renting app using Firebase Auth for secure signup/signin, including social media accounts like Google. I implemented role-based authorization, user profile management, and dynamic listing features, including seasonal pricing and availability management. This created a secure, user-friendly platform for property management.",
       link: "https://roomer.purwadhikabootcamp.com/",
     },
     {
       title: "Efnote Company Profile",
       images: ["/efnote.webp", "/efnote-product.webp"],
+      description:
+        "I developed a comprehensive company profile website aimed at enhancing their online presence and showcasing their products. My task was to create a user-friendly website. I focused on designing an intuitive website layout that facilitated easy navigation and information accessibility.",
       link: "https://next-efnote.vercel.app/",
     },
   ];
 
   return (
     <div className="py-7 flex flex-col gap-7">
-      <div className="text-center text-4xl font-bold text-black">My Works</div>
+      <div className="text-center text-4xl font-semibold text-black mb-6">
+        Projects
+      </div>
       <div>
-        <Carousel>
+        <Carousel
+          opts={{
+            loop: true,
+          }}
+        >
           <CarouselContent>
             {projects.map((project, index) => {
               return (
                 <CarouselItem key={index}>
-                  <div className="h-full w-full bg-base-blue rounded-lg flex flex-col gap-2 p-4 pb-8">
+                  <div className="h-auto w-full bg-[#7A9BA6] rounded-lg flex flex-col gap-2 p-4 pb-8">
                     <div className="flex gap-4">
                       {project.images.map((image, index) => {
                         return (
                           <div
                             key={index}
-                            className="w-1/2 h-[400px] bg-amber-950 p-4 pb-8 rounded-lg"
+                            className="w-1/2 h-[400px] bg-[#3A3A3A] p-4 pb-8 rounded-lg"
                           >
-                            <div className="w-full h-full relative">
+                            <div className="w-full h-full relative rounded-md">
                               <Image
                                 key={index}
                                 src={image}
-                                fill
                                 alt="project"
                                 quality={100}
-                                objectFit="cover"
                                 className="rounded-md"
+                                fill
                               />
                             </div>
                           </div>
                         );
                       })}
                     </div>
-                    <Link href={project.link} target="_blank">
-                      <Button
-                        variant={"link"}
-                        className="pl-2 text-2xl text-white font-bold hover:cursor-pointer"
-                      >
-                        {project.title}
-                      </Button>
-                    </Link>
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value={project.title}>
+                        <AccordionTrigger className="decoration-[#F4EBD0] hover:cursor-pointer">
+                          <div className="pl-2 text-2xl text-[#F4EBD0] font-bold w-fit">
+                            {project.title}
+                          </div>
+                        </AccordionTrigger>
+                        <AccordionContent className="pl-3 text-white">
+                          <div className="mb-6">{project.description}</div>
+                          <Link
+                            href={project.link}
+                            className="hover:cursor-pointer hover:underline"
+                          >
+                            <span>Click to See {project.title}</span>
+                          </Link>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </CarouselItem>
               );
             })}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious
+            variant={"link"}
+            className="hover:cursor-pointer text-black"
+          />
+          <CarouselNext
+            variant={"link"}
+            className="hover:cursor-pointer text-black"
+          />
         </Carousel>
       </div>
     </div>

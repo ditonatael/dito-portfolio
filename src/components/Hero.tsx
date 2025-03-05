@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
@@ -125,7 +125,7 @@ export default function Hero() {
             {techStack.map((item, index) => {
               return (
                 <div key={index} className="size-12 relative mx-2">
-                  <Image key={index} src={item.icon} fill alt="icon" />
+                  <Image key={index} src={item.icon} alt="icon" fill />
                 </div>
               );
             })}
