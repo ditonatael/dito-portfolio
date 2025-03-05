@@ -35,9 +35,9 @@ export default function Projects() {
 
   return (
     <div className="py-7 flex flex-col gap-7">
-      <div className="text-center text-4xl font-semibold text-black mb-6">
+      <h2 className="text-center text-4xl font-semibold text-black mb-6">
         Projects
-      </div>
+      </h2>
       <div>
         <Carousel
           opts={{
@@ -48,15 +48,15 @@ export default function Projects() {
             {projects.map((project, index) => {
               return (
                 <CarouselItem key={index}>
-                  <div className="h-auto w-full bg-[#7A9BA6] rounded-lg flex flex-col gap-2 p-4 pb-8">
+                  <div className="h-auto w-full bg-base-light-blue rounded-md flex flex-col gap-2 p-4 pb-8">
                     <div className="flex gap-4">
                       {project.images.map((image, index) => {
                         return (
                           <div
                             key={index}
-                            className="w-1/2 h-[400px] bg-[#3A3A3A] p-4 pb-8 rounded-lg"
+                            className="w-1/2 h-[400px] bg-base-light-gray p-4 pb-8 rounded-md"
                           >
-                            <div className="w-full h-full relative rounded-md">
+                            <div className="w-full h-full relative rounded-lg">
                               <Image
                                 key={index}
                                 src={image}
@@ -81,6 +81,7 @@ export default function Projects() {
                           <div className="mb-6">{project.description}</div>
                           <Link
                             href={project.link}
+                            target="_blank"
                             className="hover:cursor-pointer hover:underline"
                           >
                             <span>Click to See {project.title}</span>

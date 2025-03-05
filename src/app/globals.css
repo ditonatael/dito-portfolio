@@ -8,6 +8,8 @@
   --color-base: #E8DDBE;
   --color-base-black: #1A1A1A;
   --color-base-blue: #558597;
+  --color-base-light-blue: #7A9BA6;
+  --color-base-light-gray: #3A3A3A;
 }
 
 :root {

@@ -76,10 +76,10 @@ export default function Hero() {
   return (
     <div className="h-screen flex items-center">
       <div className="w-1/2 flex flex-col gap-2.5">
-        <span className="text-5xl font-bold text-base-black">
+        <h1 className="text-5xl font-bold text-base-black">
           Hello 👋, I'm Handito Natael
-        </span>
-        <span className="text-4xl text-base-blue font-bold flex gap-2">
+        </h1>
+        <h2 className="text-4xl text-base-blue font-bold flex gap-2">
           <p>I'm a</p>
           <Typewriter
             options={{
@@ -93,7 +93,7 @@ export default function Hero() {
               delay: 50,
             }}
           />
-        </span>
+        </h2>
         <span>
           Proven Full Stack Web Developer with a track record of developing{" "}
           <br />
