@@ -34,76 +34,50 @@ export default function Projects() {
   ];
 
   return (
-    <div className="py-7 flex flex-col gap-7">
-      <h2 className="text-center text-4xl font-semibold text-black mb-6">
-        Projects
-      </h2>
-      <div>
-        <Carousel
-          opts={{
-            loop: true,
-          }}
-        >
-          <CarouselContent>
-            {projects.map((project, index) => {
-              return (
-                <CarouselItem key={index}>
-                  <div className="h-auto w-full bg-base-light-blue rounded-md flex flex-col gap-2 p-4 pb-8">
-                    <div className="flex gap-4">
-                      {project.images.map((image, index) => {
-                        return (
-                          <div
-                            key={index}
-                            className="w-1/2 h-[400px] bg-base-light-gray p-4 pb-8 rounded-md"
-                          >
-                            <div className="w-full h-full relative rounded-lg">
-                              <Image
-                                key={index}
-                                src={image}
-                                alt="project"
-                                quality={100}
-                                className="rounded-md"
-                                fill
-                              />
-                            </div>
-                          </div>
-                        );
-                      })}
+    <section className="py-12 flex flex-col gap-10">
+      <h2 className="text-center text-4xl font-bold text-[#333]">Projects</h2>
+      <Carousel opts={{ loop: true }} className="w-full max-w-5xl mx-auto">
+        <CarouselContent>
+          {projects.map((project, index) => (
+            <CarouselItem key={index} className="p-4">
+              <div className="rounded-lg bg-base-light-blue p-6 shadow-sm">
+                <div className="grid grid-cols-2 gap-4">
+                  {project.images.map((image, idx) => (
+                    <div
+                      key={idx}
+                      className="relative w-full h-[300px] rounded-md overflow-hidden"
+                    >
+                      <Image
+                        src={image}
+                        alt="project image"
+                        fill
+                        className="object-cover transition-transform duration-300 hover:scale-105"
+                      />
                     </div>
-                    <Accordion type="single" collapsible>
-                      <AccordionItem value={project.title}>
-                        <AccordionTrigger className="decoration-[#F4EBD0] hover:cursor-pointer">
-                          <div className="pl-2 text-2xl text-[#F4EBD0] font-bold w-fit">
-                            {project.title}
-                          </div>
-                        </AccordionTrigger>
-                        <AccordionContent className="pl-3 text-white">
-                          <div className="mb-6">{project.description}</div>
-                          <Link
-                            href={project.link}
-                            target="_blank"
-                            className="hover:cursor-pointer hover:underline"
-                          >
-                            <span>Click to See {project.title}</span>
-                          </Link>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  </div>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious
-            variant={"link"}
-            className="hover:cursor-pointer text-black"
-          />
-          <CarouselNext
-            variant={"link"}
-            className="hover:cursor-pointer text-black"
-          />
-        </Carousel>
-      </div>
-    </div>
+                  ))}
+                </div>
+                <Accordion type="single" collapsible className="mt-6">
+                  <AccordionItem value={project.title}>
+                    <AccordionTrigger className="text-lg text-white font-semibold">
+                      {project.title}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-white font-medium text-justify">
+                      <p className="mb-4">{project.description}</p>
+                      <Link href={project.link} target="_blank">
+                        <Button className="bg-base-black text-white hover:bg-gray-800 hover:cursor-pointer rounded-full">
+                          View Project
+                        </Button>
+                      </Link>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="text-gray-500 hover:text-black" />
+        <CarouselNext className="text-gray-500 hover:text-black" />
+      </Carousel>
+    </section>
   );
 }
