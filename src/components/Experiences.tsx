@@ -4,7 +4,10 @@ export default function Experiences() {
   const workExperience = [
     {
       title: "Frontend Developer Internship at Elemes Group",
-      images: ["/elemes-certificate.webp", "/elemes-certificate.webp"],
+      images: [
+        "/assets/certificate/elemes-certificate.webp",
+        "/assets/certificate/elemes-certificate-2.webp",
+      ],
       description: `During my internship at PT Lingkar Mengajar Indonesia as a Frontend Developer, 
 I had the opportunity to work on multiple projects that required implementing responsive designs and integrating APIs.
 

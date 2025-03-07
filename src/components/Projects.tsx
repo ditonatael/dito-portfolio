@@ -19,14 +19,20 @@ export default function Projects() {
   const projects = [
     {
       title: "Roomer - Property Renting App",
-      images: ["/roomer.webp", "/roomer-profile.webp"],
+      images: [
+        "/assets/project/roomer.webp",
+        "/assets/project/roomer-profile.webp",
+      ],
       description:
         "In the Roomer project, I developed a property renting app using Firebase Auth for secure signup/signin, including social media accounts like Google. I implemented role-based authorization, user profile management, and dynamic listing features, including seasonal pricing and availability management. This created a secure, user-friendly platform for property management.",
       link: "https://roomer.purwadhikabootcamp.com/",
     },
     {
       title: "Efnote Company Profile",
-      images: ["/efnote.webp", "/efnote-product.webp"],
+      images: [
+        "/assets/project/efnote.webp",
+        "/assets/project/efnote-product.webp",
+      ],
       description:
         "I developed a comprehensive company profile website aimed at enhancing their online presence and showcasing their products. My task was to create a user-friendly website. I focused on designing an intuitive website layout that facilitated easy navigation and information accessibility.",
       link: "https://next-efnote.vercel.app/",
@@ -58,7 +64,7 @@ export default function Projects() {
                 </div>
                 <Accordion type="single" collapsible className="mt-6">
                   <AccordionItem value={project.title}>
-                    <AccordionTrigger className="text-lg text-white font-semibold">
+                    <AccordionTrigger className="text-lg text-white font-semibold hover:cursor-pointer">
                       {project.title}
                     </AccordionTrigger>
                     <AccordionContent className="text-white font-medium text-justify">

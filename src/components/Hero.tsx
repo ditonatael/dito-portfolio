@@ -9,67 +9,67 @@ export default function Hero() {
   const techStack = [
     {
       title: "Javascript",
-      icon: "/javascript.webp",
+      icon: "/assets/techstack/javascript.webp",
     },
     {
       title: "Typescript",
-      icon: "/typescript.webp",
+      icon: "/assets/techstack/typescript.webp",
     },
     {
       title: "React",
-      icon: "/react.webp",
+      icon: "/assets/techstack/react.webp",
     },
     {
       title: "NextJS",
-      icon: "/nextjs.webp",
+      icon: "/assets/techstack/nextjs.webp",
     },
     {
       title: "VueJS",
-      icon: "/vuejs.webp",
+      icon: "/assets/techstack/vuejs.webp",
     },
     {
       title: "NuxtJs",
-      icon: "/nuxtjs.webp",
+      icon: "/assets/techstack/nuxtjs.webp",
     },
     {
       title: "TailwindCSS",
-      icon: "/tailwind.webp",
+      icon: "/assets/techstack/tailwind.webp",
     },
     {
       title: "Redux",
-      icon: "/redux.webp",
+      icon: "/assets/techstack/redux.webp",
     },
     {
       title: "React Query",
-      icon: "/reactquery.webp",
+      icon: "/assets/techstack/reactquery.webp",
     },
     {
       title: "NodeJS",
-      icon: "/nodejs.webp",
+      icon: "/assets/techstack/nodejs.webp",
     },
     {
       title: "ExpressJS",
-      icon: "/express.webp",
+      icon: "/assets/techstack/express.webp",
     },
     {
       title: "MySQL",
-      icon: "/mysql.webp",
+      icon: "/assets/techstack/mysql.webp",
     },
     {
       title: "Prisma",
-      icon: "/prisma.webp",
+      icon: "/assets/techstack/prisma.webp",
     },
     {
       title: "Git/Github",
-      icon: "/github.webp",
+      icon: "/assets/techstack/github.webp",
     },
     {
       title: "Postman",
-      icon: "/postman.webp",
+      icon: "/assets/techstack/postman.webp",
     },
     {
       title: "FirebaseAuth",
-      icon: "/firebase.webp",
+      icon: "/assets/techstack/firebase.webp",
     },
   ];
 
@@ -80,7 +80,7 @@ export default function Hero() {
           Hello 👋, I'm Handito Natael
         </h1>
         <h2 className="text-4xl text-base-blue font-bold flex gap-2">
-          <p>I'm a</p>
+          I'm a
           <Typewriter
             options={{
               strings: [

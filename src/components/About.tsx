@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export default function About() {
   return (
-    <div className="py-7 flex">
+    <div className="w-full h-full py-7 flex gap-12 items-center">
       <span className="w-1/2 text-justify font-medium text-lg">
         I'm a Full-Stack Web Developer and an undergraduate student at Buddhi
         Dharma University, majoring in Informatics Engineering. My web
@@ -14,6 +16,17 @@ export default function About() {
         Passionate about learning and collaboration, I stay up to date with the
         latest technologies to deliver high-quality web solutions.
       </span>
+      <div className="w-1/2 h-[400px] bg-base-light-gray rounded-md p-10">
+        <div className="w-full h-full relative ">
+          <Image
+            src={"/ditonatael.jpg"}
+            fill
+            quality={100}
+            alt="image"
+            className="rounded-lg object-cover"
+          />
+        </div>
+      </div>
     </div>
   );
 }
