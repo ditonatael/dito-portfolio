@@ -122,12 +122,19 @@ export default function Hero() {
               Contact Me
             </Button>
           </Link>
-          <Button
-            variant={"outline"}
-            className="w-28 h-10 border-2 bg-base border-base-black rounded-full hover:bg-base-black hover:text-white font-medium text-sm hover:cursor-pointer"
+          <Link
+            href={
+              "https://drive.google.com/file/d/1KRL52D22RVeopBOvgR24wg8VZGV70oFE/view?usp=drive_link"
+            }
+            target="_blank"
           >
-            My Portfolio
-          </Button>
+            <Button
+              variant={"outline"}
+              className="w-28 h-10 border-2 bg-base border-base-black rounded-full hover:bg-base-black hover:text-white font-medium text-sm hover:cursor-pointer"
+            >
+              My Portfolio
+            </Button>
+          </Link>
         </span>
         <div className="pt-2.5">
           <Marquee>
