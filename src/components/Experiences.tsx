@@ -24,7 +24,7 @@ This experience strengthened my technical skills and ability to collaborate effe
   ];
 
   return (
-    <div className="py-12 px-6 lg:px-16">
+    <div id="experience" className="py-20 px-6 lg:px-16">
       <h2 className="text-center text-4xl font-bold text-gray-900 mb-10">
         Work Experience
       </h2>

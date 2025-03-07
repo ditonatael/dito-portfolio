@@ -4,16 +4,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./ui/carousel";
+} from "../ui/carousel";
 import Image from "next/image";
-import { Button } from "./ui/button";
-import Link from "next/link";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "./ui/accordion";
+import ProjectAccordion from "./projectAccordion";
 
 export default function Projects() {
   const projects = [
@@ -40,7 +33,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-12 flex flex-col gap-10">
+    <section id="project" className="py-20 flex flex-col gap-10">
       <h2 className="text-center text-4xl font-bold text-[#333]">Projects</h2>
       <Carousel opts={{ loop: true }} className="w-full max-w-5xl mx-auto">
         <CarouselContent>
@@ -62,21 +55,7 @@ export default function Projects() {
                     </div>
                   ))}
                 </div>
-                <Accordion type="single" collapsible className="mt-6">
-                  <AccordionItem value={project.title}>
-                    <AccordionTrigger className="text-lg text-white font-semibold hover:cursor-pointer">
-                      {project.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-white font-medium text-justify">
-                      <p className="mb-4">{project.description}</p>
-                      <Link href={project.link} target="_blank">
-                        <Button className="bg-base-black text-white hover:bg-gray-800 hover:cursor-pointer rounded-full">
-                          View Project
-                        </Button>
-                      </Link>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+                <ProjectAccordion project={project} />
               </div>
             </CarouselItem>
           ))}
