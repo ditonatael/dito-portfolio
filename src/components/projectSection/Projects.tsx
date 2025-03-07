@@ -38,13 +38,13 @@ export default function Projects() {
       <Carousel opts={{ loop: true }} className="w-full max-w-5xl mx-auto">
         <CarouselContent>
           {projects.map((project, index) => (
-            <CarouselItem key={index} className="p-4">
+            <CarouselItem key={index} className="">
               <div className="rounded-lg bg-base-light-blue p-6 shadow-sm">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {project.images.map((image, idx) => (
                     <div
                       key={idx}
-                      className="relative w-full h-[300px] rounded-md overflow-hidden"
+                      className="relative w-full h-50 md:w-full md:h-[300px] rounded-md overflow-hidden"
                     >
                       <Image
                         src={image}
@@ -60,8 +60,8 @@ export default function Projects() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="text-gray-500 hover:text-black" />
-        <CarouselNext className="text-gray-500 hover:text-black" />
+        <CarouselPrevious className="hidden xl:flex justify-center items-center text-gray-500 hover:text-black" />
+        <CarouselNext className="hidden xl:flex justify-center items-center text-gray-500 hover:text-black" />
       </Carousel>
     </section>
   );

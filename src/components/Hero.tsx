@@ -75,11 +75,11 @@ export default function Hero() {
 
   return (
     <div className="h-screen flex items-center">
-      <div className="w-1/2 flex flex-col gap-2.5">
-        <h1 className="text-5xl font-bold text-base-black">
+      <div className="w-full lg:w-1/2 flex flex-col gap-2.5">
+        <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold text-base-black text-center md:text-left">
           Hello 👋, I'm Handito Natael
         </h1>
-        <h2 className="text-4xl text-base-blue font-bold flex gap-2">
+        <h2 className="md:text-3xl xl:text-4xl text-base-blue font-bold flex gap-2 justify-center md:justify-start">
           I'm a
           <Typewriter
             options={{
@@ -94,12 +94,12 @@ export default function Hero() {
             }}
           />
         </h2>
-        <span>
-          Proven Full Stack Web Developer with a track record of developing{" "}
-          <br />
+        <span className="text-sm text-center md:text-left">
+          Proven Full Stack Web Developer with a track record of developing
+          <br className="hidden md:block" />
           efficient and scalable applications.
         </span>
-        <span className="flex gap-2.5">
+        <span className="flex gap-2.5 justify-center md:justify-start">
           <Link
             href={
               "https://api.whatsapp.com/send/?phone=6289668247663&text&type=phone_number&app_absent=0"

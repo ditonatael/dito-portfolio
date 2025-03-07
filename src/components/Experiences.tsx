@@ -24,20 +24,20 @@ This experience strengthened my technical skills and ability to collaborate effe
   ];
 
   return (
-    <div id="experience" className="py-20 px-6 lg:px-16">
+    <div id="experience" className="py-20 lg:px-16">
       <h2 className="text-center text-4xl font-bold text-gray-900 mb-10">
         Work Experience
       </h2>
       {workExperience.map((experience, index) => (
         <div
           key={index}
-          className="flex flex-col lg:flex-row items-center gap-10 bg-[#FAF3E0] p-8 rounded-xl shadow-lg"
+          className="flex flex-col lg:flex-row items-center gap-10 bg-[#FAF3E0] p-1 md:p-8 rounded-xl shadow-lg"
         >
           <div className="w-full lg:w-1/2 grid grid-cols-1 gap-4">
             {experience.images.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full h-96 rounded-lg overflow-hidden"
+                className="relative w-full h-40 md:h-96 rounded-lg overflow-hidden"
               >
                 <Image
                   src={image}

@@ -13,9 +13,9 @@ export default function Footer() {
   ];
   return (
     <div className="h-56 rounded-t-3xl bg-base-black shadow-2xl">
-      <div className="h-full container mx-auto flex items-center justify-between">
+      <div className="h-full container mx-auto flex items-center justify-between px-7">
         <div className="flex flex-col w-1/2 gap-4">
-          <div className="text-white text-5xl font-extrabold">
+          <div className="text-white text-2xl lg:text-5xl font-extrabold">
             Let's Work Together !
           </div>
           <div className="flex gap-4">
