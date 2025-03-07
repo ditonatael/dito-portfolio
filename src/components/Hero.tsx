@@ -86,10 +86,10 @@ export default function Hero() {
     <div className="h-screen flex items-center">
       <div data-aos="zoom-in" className="w-full lg:w-1/2 flex flex-col gap-2.5">
         <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold text-base-black text-center md:text-left">
-          Hello 👋, I'm Handito Natael
+          Hello 👋, I&apos;m Handito Natael
         </h1>
         <h2 className="md:text-3xl xl:text-4xl text-base-blue font-bold flex gap-2 justify-center md:justify-start">
-          I'm a
+          I&apos;m a
           <Typewriter
             options={{
               strings: [
