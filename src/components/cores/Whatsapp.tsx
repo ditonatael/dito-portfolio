@@ -22,7 +22,7 @@ export default function WhatsappButton() {
         }
         target="_blank"
       >
-        <div className="size-14 bg-green-500 rounded-full flex items-center justify-center text-white hover:cursor-pointer">
+        <div className="size-14 bg-green-500 hover:bg-green-700 rounded-full flex items-center justify-center text-white hover:cursor-pointer">
           <FaWhatsapp size={35} />
         </div>
       </Link>

@@ -134,7 +134,13 @@ export default function Hero() {
             {techStack.map((item, index) => {
               return (
                 <div key={index} className="size-12 relative mx-2">
-                  <Image key={index} src={item.icon} alt="icon" fill />
+                  <Image
+                    key={index}
+                    src={item.icon}
+                    alt="icon"
+                    fill
+                    sizes="fill"
+                  />
                 </div>
               );
             })}

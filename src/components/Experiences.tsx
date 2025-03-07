@@ -56,9 +56,9 @@ This experience strengthened my technical skills and ability to collaborate effe
                 <Image
                   src={image}
                   alt="Experience Certificate"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
+                  fill
+                  sizes="fill"
+                  className="rounded-lg object-contain"
                 />
               </div>
             ))}

@@ -46,6 +46,7 @@ export default function About() {
               fill
               quality={100}
               alt="image"
+              sizes="fill"
               className="rounded-lg object-cover"
             />
           </div>
