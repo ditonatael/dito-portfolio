@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="h-full container mx-auto flex items-center justify-between px-7">
         <div className="flex flex-col w-1/2 gap-4">
           <div className="text-white text-2xl lg:text-5xl font-extrabold">
-            Let's Work Together !
+            Let&apos;s Work Together !
           </div>
           <div className="flex gap-4">
             {socialIcons.map((icon, index) => {
