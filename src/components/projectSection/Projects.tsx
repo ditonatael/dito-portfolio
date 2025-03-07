@@ -1,3 +1,4 @@
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +8,9 @@ import {
 } from "../ui/carousel";
 import Image from "next/image";
 import ProjectAccordion from "./projectAccordion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Projects() {
   const projects = [
@@ -32,10 +36,25 @@ export default function Projects() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <section id="project" className="py-20 flex flex-col gap-10">
-      <h2 className="text-center text-4xl font-bold text-[#333]">Projects</h2>
-      <Carousel opts={{ loop: true }} className="w-full max-w-5xl mx-auto">
+      <h2
+        data-aos="zoom-in"
+        className="text-center text-4xl font-bold text-[#333]"
+      >
+        Projects
+      </h2>
+      <Carousel
+        data-aos="zoom-in"
+        opts={{ loop: true }}
+        className="w-full max-w-5xl mx-auto"
+      >
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index} className="">

@@ -1,4 +1,8 @@
+"use client";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Experiences() {
   const workExperience = [
@@ -23,13 +27,23 @@ This experience strengthened my technical skills and ability to collaborate effe
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div id="experience" className="py-20 lg:px-16">
-      <h2 className="text-center text-4xl font-bold text-gray-900 mb-10">
+      <h2
+        data-aos="zoom-in"
+        className="text-center text-4xl font-bold text-gray-900 mb-10"
+      >
         Work Experience
       </h2>
       {workExperience.map((experience, index) => (
         <div
+          data-aos="zoom-in"
           key={index}
           className="flex flex-col lg:flex-row items-center gap-10 bg-[#FAF3E0] p-1 md:p-8 rounded-xl shadow-lg"
         >

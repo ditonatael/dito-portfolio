@@ -4,6 +4,9 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
 import { Button } from "./ui/button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Hero() {
   const techStack = [
@@ -73,9 +76,15 @@ export default function Hero() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="h-screen flex items-center">
-      <div className="w-full lg:w-1/2 flex flex-col gap-2.5">
+      <div data-aos="zoom-in" className="w-full lg:w-1/2 flex flex-col gap-2.5">
         <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold text-base-black text-center md:text-left">
           Hello 👋, I'm Handito Natael
         </h1>
