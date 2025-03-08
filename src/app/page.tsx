@@ -6,7 +6,7 @@ import Experiences from "~/components/Experiences";
 export default function Home() {
   return (
     <div className="bg-base">
-      <div className="container mx-auto px-7">
+      <div className="container mx-auto px-7 overflow-x-hidden">
         <Hero />
         <div className="border-t border-base-black mb-5" />
         <About />

@@ -19,10 +19,13 @@ export default function About() {
       >
         About Me
       </h2>
-      <div className="flex flex-wrap-reverse md:flex-nowrap md:flex-row items-center justify-center gap-12">
+      <div
+        data-aos="zoom-in"
+        className="bg-base-cream shadow-xl rounded-2xl p-8 flex flex-wrap-reverse md:flex-nowrap md:flex-row items-center justify-center gap-12"
+      >
         <span
           data-aos="fade-right"
-          className="w-full lg:w-1/2 text-justify font-medium text-lg"
+          className="w-full lg:w-1/2 text-justify font-medium text-lg text-gray-700"
         >
           I&apos;m a Full-Stack Web Developer and an undergraduate student at
           Buddhi Dharma University, majoring in Informatics Engineering. My web
@@ -39,7 +42,7 @@ export default function About() {
 
         <div
           data-aos="fade-left"
-          className="w-full lg:w-1/2 h-[400px] bg-base-light-blue rounded-md p-10 shadow-lg"
+          className="w-full lg:w-1/2 h-[400px] bg-base-brown rounded-md p-10 shadow-xl"
         >
           <div className="w-full h-full relative ">
             <Image
