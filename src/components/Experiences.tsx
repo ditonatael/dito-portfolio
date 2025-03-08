@@ -45,7 +45,7 @@ This experience strengthened my technical skills and ability to collaborate effe
         <div
           data-aos="zoom-in"
           key={index}
-          className="flex flex-col lg:flex-row items-center gap-10 bg-[#FAF3E0] p-1 md:p-8 rounded-xl shadow-lg"
+          className="flex flex-col lg:flex-row items-center gap-10 bg-base-cream p-1 md:p-8 rounded-xl shadow-lg"
         >
           <div className="w-full lg:w-1/2 grid grid-cols-1 gap-4">
             {experience.images.map((image, index) => (

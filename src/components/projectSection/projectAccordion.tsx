@@ -24,7 +24,7 @@ export default function ProjectAccordion({ project }: { project: Project }) {
         <AccordionContent className="text-white font-medium text-justify">
           <p className="mb-4">{project.description}</p>
           <Link href={project.link} target="_blank">
-            <Button className="bg-base-black text-white hover:bg-gray-800 hover:cursor-pointer rounded-full">
+            <Button className="bg-base-brown text-white hover:bg-gray-800 hover:cursor-pointer rounded-full">
               View Project
             </Button>
           </Link>

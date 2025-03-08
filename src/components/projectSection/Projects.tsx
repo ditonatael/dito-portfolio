@@ -58,7 +58,7 @@ export default function Projects() {
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index} className="">
-              <div className="rounded-lg bg-base-light-blue p-6 shadow-sm">
+              <div className="rounded-lg bg-base-green p-6 shadow-xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {project.images.map((image, idx) => (
                     <div

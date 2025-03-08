@@ -14,7 +14,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="h-16 rounded-b-3xl bg-base-light-gray sticky top-0 z-20 shadow-2xl px-7">
+    <div className="h-16 rounded-b-3xl bg-base-brown sticky top-0 z-20 shadow-2xl px-7">
       <div className="h-full container mx-auto flex items-center justify-center md:justify-between">
         <div className="hidden md:block font-semibold text-[#FAF3E0] text-lg">
           Handito Natael - Portfolio
