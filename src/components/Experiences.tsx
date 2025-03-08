@@ -12,7 +12,7 @@ export default function Experiences() {
         "/assets/certificate/elemes-certificate.webp",
         "/assets/certificate/elemes-certificate-2.webp",
       ],
-      description: `During my internship at PT Lingkar Mengajar Indonesia as a Frontend Developer, 
+      description: `During my internship at PT Lingkar Indonesia Mengajar as a Frontend Developer, 
 I had the opportunity to work on multiple projects that required implementing responsive designs and integrating APIs.
 
 My main responsibilities included converting Figma designs into fully responsive web pages and collaborating with backend developers to integrate APIs seamlessly. Additionally, I aimed to enhance my understanding of Vue, Nuxt, and GitHub collaboration.
