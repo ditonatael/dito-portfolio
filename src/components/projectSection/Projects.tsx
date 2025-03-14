@@ -25,6 +25,16 @@ export default function Projects() {
       link: "https://roomer.purwadhikabootcamp.com/",
     },
     {
+      title: "Depop - Online Thrifting Platform",
+      images: [
+        "/assets/project/depop.webp",
+        "/assets/project/depop-product.webp",
+      ],
+      description:
+        "I built a Depop-inspired online thrifting platform using Next.js as the framework. I focused on UI slicing to ensure a responsive design, optimizing the user experience across mobile screens. For data storage, I integrated Firestore to manage product listings and user data. The platform includes authentication features, allowing users to sign up and sign in using email credentials.",
+      link: "https://next-depop.vercel.app/",
+    },
+    {
       title: "Efnote Company Profile",
       images: [
         "/assets/project/efnote.webp",
