@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Navbar from "~/components/cores/Navbar";
 import Footer from "~/components/cores/Footer";
 import WhatsappButton from "~/components/cores/Whatsapp";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontSans = FontSans({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
-  title: "Handito Natael Portfolio",
+  title: "Handito Natael",
   description: "Handito natael web portfolio",
 };
 
@@ -27,13 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-base`}
-      >
-        <Navbar />
+      <body className={`${fontSans.variable} antialiased bg-base`}>
         {children}
-        <WhatsappButton />
-        <Footer />
+        {/* <WhatsappButton /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
