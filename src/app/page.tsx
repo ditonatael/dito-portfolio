@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
+
   const images = [
     {
       id: 1,
@@ -22,24 +23,24 @@ export default function Home() {
   return !isLoaded ? (
     <div>Loading...</div>
   ) : (
-    <div className="flex flex-col min-h-[100dvh] space-y-10 pt-14">
+    <div className="flex flex-col min-h-[100dvh] space-y-10 pt-14 px-4 md:px-0">
       <div className="mx-auto w-full max-w-2xl">
         {/* Hero */}
         <div className="gap-2 flex justify-between items-center space-y-8">
           <div className="flex-col flex flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none">
               Hi, I&apos;m Dito 👋
             </h1>
-            <p className="max-w-[600px] md:text-xl text-justify">
+            <span className="max-w-[600px] text-base md:text-xl md:text-justify">
               Proven Full Stack Web Developer with a track record of developing
               efficient and scalable applications.
-            </p>
+            </span>
           </div>
           <Stack
             randomRotation={true}
             sensitivity={180}
             sendToBackOnClick={false}
-            cardDimensions={{ width: 150, height: 150 }}
+            cardDimensions={{ width: 200, height: 200 }}
             cardsData={images}
           />
         </div>
