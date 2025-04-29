@@ -9,9 +9,9 @@ import {
 
 export default function WorkExperience() {
   return (
-    <>
+    <div>
       <h2 className="text-2xl font-bold">Work Experience</h2>
-      <Accordion type="single" collapsible className="w-full mt-2">
+      <Accordion type="single" collapsible className="w-full mt-1">
         <AccordionItem value="item-1">
           <AccordionTrigger className="group hover:cursor-pointer">
             <div className="flex justify-between items-center w-full">
@@ -24,6 +24,7 @@ export default function WorkExperience() {
                     loading="lazy"
                     quality={100}
                     className="rounded-full"
+                    sizes="full"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -50,6 +51,6 @@ export default function WorkExperience() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-    </>
+    </div>
   );
 }
