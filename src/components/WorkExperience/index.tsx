@@ -11,7 +11,7 @@ export default function WorkExperience() {
   return (
     <div>
       <h2 className="text-2xl font-bold">Work Experience</h2>
-      <Accordion type="single" collapsible className="w-full mt-1">
+      <Accordion type="single" collapsible className="w-full mt-3">
         <AccordionItem value="item-1">
           <AccordionTrigger className="group hover:cursor-pointer">
             <div className="flex justify-between items-center w-full">

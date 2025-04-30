@@ -19,7 +19,7 @@ export default function Education() {
   return (
     <div>
       <h2 className="text-2xl font-bold">Education</h2>
-      <div className="flex flex-col gap-4 mt-1">
+      <div className="flex flex-col gap-4 mt-3">
         {educationData.map((item, index) => {
           return (
             <div

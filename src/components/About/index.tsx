@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <div>
-      <h2 className="text-2xl font-bold">About</h2>
+      <h2 className="text-2xl font-bold mb-1">About</h2>
       <span className="text-zinc-700 tracking-wide">
         In early 2024, I began my full-stack web development journey at{" "}
         <Link href={"/"} className="text-black font-semibold underline">

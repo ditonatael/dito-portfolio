@@ -15,7 +15,7 @@ export default function Home() {
     <></>
   ) : (
     <div className="min-h-[100dvh] pt-14 px-4 md:px-0">
-      <div className="mx-auto w-full max-w-2xl flex flex-col gap-4">
+      <div className="mx-auto w-full max-w-2xl flex flex-col gap-6">
         <Hero />
         <About />
         <div className="border"></div>
