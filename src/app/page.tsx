@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Hero from "../components/Hero";
 import About from "~/components/About";
 import WorkExperience from "~/components/WorkExperience";
+import Education from "~/components/Education";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <WorkExperience />
+        <Education />
       </div>
     </div>
   );
