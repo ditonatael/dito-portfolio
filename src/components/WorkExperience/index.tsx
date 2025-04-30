@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "~/components/ui/accordion";
+import Link from "next/link";
 
 export default function WorkExperience() {
   return (
@@ -42,7 +43,7 @@ export default function WorkExperience() {
               </div>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="pl-16 text-justify tra">
+          <AccordionContent className="pl-16 text-justify tracking-wide">
             Converted Figma designs into responsive web pages using Vue and Nuxt
             during an internship at Elemes Group. Integrated APIs in
             collaboration with backend developers and contributed to team
@@ -50,6 +51,15 @@ export default function WorkExperience() {
             code reviews. Strengthened frontend skills while gaining hands-on
             experience in collaborative development with modern tools and
             frameworks.
+            <Link
+              href={
+                "https://drive.google.com/file/d/11DdZOlRcDieKdDXFg8j8Cqg0UM3sUv3b/view?usp=drive_link"
+              }
+              target="_blank"
+              className="text-blue-500 hover:underline pl-1"
+            >
+              Certificate
+            </Link>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
