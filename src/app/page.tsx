@@ -18,6 +18,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-2xl flex flex-col gap-4">
         <Hero />
         <About />
+        <div className="border"></div>
         <WorkExperience />
         <Education />
       </div>
