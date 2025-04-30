@@ -16,28 +16,30 @@ export default function WorkExperience() {
           <AccordionTrigger className="group hover:cursor-pointer">
             <div className="flex justify-between items-center w-full">
               <div className="flex items-center gap-4">
-                <div className="size-12 relative">
+                <div className="min-h-12 min-w-12 relative rounded-full">
                   <Image
                     src={"/assets/work/elemes-icon.webp"}
                     alt="company logo"
                     fill
                     loading="lazy"
                     quality={100}
-                    className="rounded-full"
+                    className="rounded-full border"
                     sizes="full"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <h3 className="font-semibold text-base inline-flex items-center">
+                  <h3 className="font-semibold text-sm md:text-base inline-flex items-center">
                     Elemes Group
                     <ChevronDownIcon className="size-4 transform transition-all duration-300 -rotate-90 -translate-x-0.5 opacity-0 group-hover:translate-x-0.5 group-hover:opacity-100 group-data-[state=open]:rotate-0" />
                   </h3>
-                  <span className="font-light text-sm">
+                  <span className="font-light text-xs md:text-sm">
                     Front-end Developer {"(Internship)"}
                   </span>
                 </div>
               </div>
-              <div className="text-muted-foreground">Sept - Dec 2024</div>
+              <div className="text-muted-foreground text-xs md:text-base">
+                Sept - Dec 2024
+              </div>
             </div>
           </AccordionTrigger>
           <AccordionContent className="pl-16 text-justify tra">
