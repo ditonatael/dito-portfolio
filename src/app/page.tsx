@@ -5,6 +5,7 @@ import About from "~/components/About";
 import WorkExperience from "~/components/WorkExperience";
 import Education from "~/components/Education";
 import Skills from "~/components/Skills";
+import LatestWork from "~/components/LatestWork";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
         <WorkExperience />
         <Education />
         <Skills />
+        <LatestWork />
       </div>
     </div>
   );
