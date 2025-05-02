@@ -1,11 +1,9 @@
 @import "tailwindcss";
-
-@plugin "tailwindcss-animate";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-base: #E8DDBE;
   --color-base-black: #1A1A1A;
   --color-base-blue: #028090;
   --color-base-brown: #8C705F;
