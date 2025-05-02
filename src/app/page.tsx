@@ -41,7 +41,7 @@ export default function Home() {
             >
               message on WhatsApp
             </Link>{" "}
-            with a clear question, and I'll reply when I can. I won&apos;t
+            with a clear question, and I&apos;ll reply when I can. I won&apos;t
             respond to any kind of soliciting.
           </p>
         </div>
